@@ -1,16 +1,64 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+    "pages": [{
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "首页"
+            }
+        },
+        {
+            "path": "pages/cart/index"
+        },
+        {
+            "path": "pages/category/index"
+        },
+        {
+            "path": "pages/live/index"
+        },
+        {
+            "path": "pages/center/index"
+        }
+
+    ],
+    "tabBar": {
+        "color": "#D0D0D0",
+        "selectedColor": "#F44A08",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "./static/images/goods_detail_icon_home.png",
+                "selectedIconPath": "./static/images/icon_home_selected.png"
+
+            },
+            {
+                "pagePath": "pages/category/index",
+                "text": "商品分类",
+                "iconPath": "./static/images/fel.png",
+                "selectedIconPath": "./static/images/fel_1.png"
+            },
+            {
+                "pagePath": "pages/cart/index",
+                "text": "购物车",
+                "iconPath": "./static/image/gw.png",
+                "selectedIconPath": "./static/image/gw_d.png"
+            },
+            {
+                "pagePath": "pages/live/index",
+                "text": "生活",
+                "iconPath": "./static/images/icon_car_unselected.png",
+                "selectedIconPath": "./static/images/icon_car_selected.png"
+            },
+            {
+                "pagePath": "pages/center/index",
+                "text": "个人中心",
+                "iconPath": "./static/images/icon_mine_unselected.png",
+                "selectedIconPath": "./static/images/icon_mine_selected.png"
+            }
+        ]
+    },
+    "globalStyle": {
+        "navigationBarTextStyle": "write",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#f44a08",
+        "backgroundColor": "#F8F8F8"
+    }
 }
