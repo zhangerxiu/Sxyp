@@ -1,8 +1,21 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
+		<!-- 轮播图 -->
+		<swiper class="picture" indicator-dots circular>
+		<swiper-item >
+			<image src="../../static/image/fenl1.jpg"/>
+		</swiper-item>
+		<swiper-item>
+			<image src="../../static/image/fenl2.jpg"/>
+		</swiper-item>
+		<swiper-item>
+			<image src="../../static/image/fenl3.jpg"/>
+		</swiper-item>
+		</swiper>
+		<view class="q">
+		<view class="w">超低价格</view>
+		<view class="w">专属福利</view>
+		<view class="w">赚取积分</view>
 		</view>
 	</view>
 </template>
@@ -11,7 +24,8 @@
 	export default {
 		data() {
 			return {
-				title: '你好啊啊'
+				title: '',
+				"previous-margin":"5rpx"
 			}
 		},
 		onLoad() {
@@ -23,20 +37,22 @@
 	}
 </script>
 
-<style>
-	.content {
-		text-align: center;
-		height: 400upx;
-	}
+<style lang='less'>
+.content .picture{
+height: 300rpx;
+image {
+	width: 750rpx;
+    height: 300rpx;
+  }
+}
 
-	.logo {
-		height: 200upx;
-		width: 200upx;
-		margin-top: 200upx;
-	}
+.q{
+display: flex;
+.w{
+	flex: 1;
+	text-align: center;
+	color: coral;
+}
+}
 
-	.title {
-		font-size: 36upx;
-		color: #8f8f94;
-	}
 </style>
